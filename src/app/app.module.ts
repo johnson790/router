@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'servers', component: ServersComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'users/:id/:name', component: UserComponent },
 ];
 
 
@@ -26,7 +27,8 @@ const routes: Routes = [
     ServersComponent,
     UserComponent,
     EditServerComponent,
-    ServerComponent
+    ServerComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
